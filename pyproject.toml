@@ -1,0 +1,31 @@
+[project]
+name = "sentiment-analysis"
+version = "0.1.0"
+description = "Text Sentiment Analysis Project"
+authors = [
+    {name = "Sumit Joshi",email = "sumit.joshi9818@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "python-box (>=7.3.2,<8.0.0)",
+    "pyyaml (>=6.0.3,<7.0.0)",
+    "pandas (>=2.3.3,<3.0.0)"
+]
+
+packages = [
+    { include = "sentiment_analysis", from = "src" }
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "ipykernel (>=7.1.0,<8.0.0)"
+]
+
+[tool.poetry.scripts]
+train = "sentiment_analysis.pipline.training_pipeline:train"

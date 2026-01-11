@@ -4,7 +4,7 @@ import logging
 
 logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s:')
 
-project_name = "sentiment-analysis"
+project_name = "sentiment_analysis"
 
 list_of_files = [
     f"src/{project_name}/__init__.py",
@@ -16,6 +16,8 @@ list_of_files = [
     f"src/{project_name}/configuration/__init__.py",
     f"src/{project_name}/constants/__init__.py",
     f"src/{project_name}/pipline/__init__.py",
+    "config/config.yaml",
+    "config/params.yaml",
     "experiment/experiments.ipynb",
     "api/app.py",
     "requirements.txt",

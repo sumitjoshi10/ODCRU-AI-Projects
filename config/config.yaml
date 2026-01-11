@@ -1,0 +1,13 @@
+artifacts_root: artifacts
+
+data_ingestion:
+  data_root: data
+  raw_data_dir: ${data_ingestion.data_root}
+  raw_data_file: sentiment_analysis.csv
+  raw_data_file_path: ${data_ingestion.raw_data_dir}/${data_ingestion.raw_data_file}
+
+
+naive_baysian:
+  save_model_path: ${artifacts_root}/model/naive_baysian.pkl
+
+

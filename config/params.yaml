@@ -1,0 +1,3 @@
+TrainingArgument:
+  model_name: naive_baysian
+  
